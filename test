@@ -1,0 +1,15 @@
+var intArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 100, 112, 113];
+
+var result = 0;
+for (var i = 0; i < intArray.length; i++) {
+ 
+  if(intArray[i] % 2 === 0) {
+    intArray[result++] = intArray[i];
+  }
+  
+}
+
+//suppress array length to result.
+intArray.length = result;
+
+console.log("Finale output: " + intArray)
